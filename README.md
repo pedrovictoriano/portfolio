@@ -24,13 +24,7 @@ Este projeto é um portfólio pessoal responsivo, construído com HTML5, CSS3 e 
 
 🎨 Personalização
 
-- Cores: Ajuste as variáveis no início de css/style.css:
-:root {
-  --primary-color: #2c3e50;
-  --accent-color: #e67e22;
-  --bg-color: #f9f9f9;
-  --font-family: 'Inter', sans-serif;
-}
+- Cores: Ajuste as variáveis no início de css/style.css (param :root).
 - Fontes: Configure o link do Google Fonts em index.html.
 - Conteúdo: Substitua os itens de cursos, projetos e informações de contato pelos seus próprios.
 
