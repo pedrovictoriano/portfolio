@@ -2,19 +2,6 @@ Portfólio de Pedro victoriano
 
 Este projeto é um portfólio pessoal responsivo, construído com HTML5, CSS3 e JavaScript puro. O objetivo é apresentar cursos, projetos do GitHub e informações de contato de forma clara e moderna, adaptada para dispositivos desktop e mobile.
 
-📁 Estrutura de Pastas
-
-/meu-portfolio
-
-├── index.html        # Página principal do portfólio
-├── css
-│   └── style.css     # Estilos principais
-├── js
-│   └── main.js       # Scripts de interação (ex:menu mobile)
-├── images            # Imagens, logos e ícones utilizados
-│   └── ...
-└── README.md         # Documentação e instruções do projeto
-
 🚀 Tecnologias Utilizadas
 
 - HTML5
