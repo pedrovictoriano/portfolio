@@ -32,8 +32,8 @@ Este projeto é um portfólio pessoal responsivo, construído com HTML5, CSS3 e 
 
 Contribuições são bem-vindas! Para isso faça:
 
--Fork do projeto.
--Crie uma branch com a sua feature: git checkout -b feature/nova-funcionalidade
--Faça commit das suas alterações: git commit -m 'Adiciona nova funcionalidade'
--Envie para a branch principal: git push origin feature/nova-funcionalidade
--Abra um Pull Request.
+- Fork do projeto.
+- Crie uma branch com a sua feature: git checkout -b feature/nova-funcionalidade
+- Faça commit das suas alterações: git commit -m 'Adiciona nova funcionalidade'
+- Envie para a branch principal: git push origin feature/nova-funcionalidade
+- Abra um Pull Request.
