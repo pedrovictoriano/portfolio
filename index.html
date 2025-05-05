@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Pedro Victoriano</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <input type="checkbox" id="menu-toggle">
+      <nav>
+        <a href="#hero" class="logo">Pedro Victoriano</a>
+        <div class="menu">
+          <a href="#about">Sobre</a>
+          <a href="#courses">Cursos</a>
+          <a href="#projects">Projetos</a>
+          <a href="#contact">Contato</a>
+        </div>
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div>
+      <h1>Olá, eu sou Pedro Victoriano</h1>
+      <p>Desenvolvedor Full-Stack | Apaixonado por Tecnologia e Inovação</p>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>Sobre Mim</h2>
+    <p>Tenho 22 anos, atualmente estou trabalhando na Aegea Saneamento como Customer Experience. Focado em projetos, atuando como PMO e liderando melhorias cotidianas em processos.</p>
+  </section>
+
+  <section id="courses" class="container">
+    <h2>Cursos</h2>
+    <ul class="courses-list">
+      <li>Graduação em Engeharia da Computação - UNISAL - 2021-2025</li>
+      <li>Técnico em Fabricação Mecânica - SENAI - 2020-2021</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projetos</h2>
+    <div class="grid">
+      <div class="project-card">
+        <h3>Projeto 1</h3>
+        <p>Descrição breve do projeto.</p>
+        <a href="https://github.com/username/repo1" target="_blank" class="button">Ver no GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Projeto 2</h3>
+        <p>Descrição breve do projeto.</p>
+        <a href="https://github.com/username/repo2" target="_blank" class="button">Ver no GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contato</h2>
+    <form action="mailto:progpedrovictoriano@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu Email" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="container" style="text-align:center; padding:2rem 1rem; color:#777;">
+    © 2025 Pedro Victoriano. Todos os direitos reservados.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
