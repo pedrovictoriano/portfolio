@@ -1,85 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Preload fontes e CSS críticos -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" as="style">
+  <link rel="preload" href="css/style.css" as="style">
+
+  <!-- Meta Open Graph -->
+  <meta property="og:title" content="Portfólio de Pedro Victoriano">
+  <meta property="og:description" content="Full-Stack Developer | Inovação e tecnologia no seu próximo projeto.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:url" content="https://username.github.io/meu-portfolio/">
+
   <title>Portfólio de Pedro Victoriano</title>
-  <!-- Google Fonts -->
+
+  <!-- CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- CSS externo -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- AOS (scroll animations) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- FontAwesome para ícones sociais -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 </head>
 <body>
-  <header>
+
+  <header data-aos="fade-down">
     <div class="container">
       <input type="checkbox" id="menu-toggle">
       <nav>
         <a href="#hero" class="logo">Pedro Victoriano</a>
+
         <div class="menu">
           <a href="#about">Sobre</a>
-          <a href="#courses">Cursos</a>
+          <a href="#skills">Skills</a>
+          <a href="#timeline">Linha do Tempo</a>
           <a href="#projects">Projetos</a>
           <a href="#contact">Contato</a>
         </div>
+
+        <button id="theme-toggle" class="theme-btn">🌙</button>
         <label for="menu-toggle" class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </label>
       </nav>
     </div>
   </header>
 
   <section id="hero">
-    <div>
-      <h1>Olá, eu sou Pedro Victoriano</h1>
+    <div id="tsparticles"></div>
+    <div class="hero-content" data-aos="zoom-in">
+      <!-- fallback sempre visível -->
+      <h1><span id="typing">Olá, eu sou Pedro Victoriano</span><span class="cursor">|</span></h1>
       <p>Desenvolvedor Full-Stack | Apaixonado por Tecnologia e Inovação</p>
     </div>
   </section>
 
-  <section id="about" class="container">
-    <h2>Sobre Mim</h2>
-    <p>Tenho 22 anos, atualmente estou trabalhando na Aegea Saneamento como Customer Experience. Focado em projetos, atuando como PMO e liderando melhorias cotidianas em processos.</p>
-  </section>
+  <main>
+    <section id="about" class="container" data-aos="fade-up">
+      <h2>Sobre Mim</h2>
+      <p>Tenho 22 anos, trabalho na Aegea Saneamento como Customer Experience. Atuo como PMO, liderando melhorias em processos.</p>
+    </section>
 
-  <section id="courses" class="container">
-    <h2>Cursos</h2>
-    <ul class="courses-list">
-      <li>Graduação em Engeharia da Computação - UNISAL - 2021-2025</li>
-      <li>Técnico em Fabricação Mecânica - SENAI - 2020-2021</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="container">
-    <h2>Projetos</h2>
-    <div class="grid">
-      <div class="project-card">
-        <h3>Projeto 1</h3>
-        <p>Descrição breve do projeto.</p>
-        <a href="https://github.com/username/repo1" target="_blank" class="button">Ver no GitHub</a>
+    <section id="skills" class="container" data-aos="fade-up">
+      <h2>Habilidades</h2>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar"><div class="progress" style="width:85%"></div></div>
       </div>
-      <div class="project-card">
-        <h3>Projeto 2</h3>
-        <p>Descrição breve do projeto.</p>
-        <a href="https://github.com/username/repo2" target="_blank" class="button">Ver no GitHub</a>
+      <div class="skill">
+        <span>HTML &amp; CSS</span>
+        <div class="bar"><div class="progress" style="width:90%"></div></div>
       </div>
-    </div>
-  </section>
+      <div class="skill">
+        <span>React Native</span>
+        <div class="bar"><div class="progress" style="width:75%"></div></div>
+      </div>
+      <div class="skill">
+        <span>TypeScript</span>
+        <div class="bar"><div class="progress" style="width:45%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Python</span>
+        <div class="bar"><div class="progress" style="width:80%"></div></div>
+      </div>
+    </section>
 
-  <section id="contact" class="container">
-    <h2>Contato</h2>
-    <form action="mailto:progpedrovictoriano@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="nome" placeholder="Seu Nome" required>
-      <input type="email" name="email" placeholder="Seu Email" required>
-      <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
-      <button type="submit" class="button">Enviar</button>
-    </form>
-  </section>
+    <section id="timeline" class="container" data-aos="fade-up">
+      <h2>Linha do Tempo</h2>
+      <div class="timeline">
+        <div class="event">
+          <time>2021</time>
+          <p>Início da graduação em Engenharia da Computação – UNISAL</p>
+        </div>
+        <div class="event">
+          <time>2023</time>
+          <p>Adoção de GitHub Actions e SAP scripting em projetos internos</p>
+        </div>
+        <div class="event">
+          <time>2025</time>
+          <p>PMO na Aegea e desenvolvimento de portfólio interativo</p>
+        </div>
+      </div>
+    </section>
 
-  <footer class="container" style="text-align:center; padding:2rem 1rem; color:#777;">
+    <section id="projects" class="container" data-aos="fade-up">
+      <h2>Projetos</h2>
+
+      <div class="filters">
+        <button class="filter-btn" data-cat="all">Todos</button>
+        <button class="filter-btn" data-cat="web">Web</button>
+        <button class="filter-btn" data-cat="api">API</button>
+      </div>
+
+      <div class="grid">
+        <div class="project-card" data-cat="web">
+          <h3>Projeto Web 1</h3>
+          <p>Descrição breve do projeto web.</p>
+          <a href="https://github.com/username/repo1" target="_blank" class="button">Ver no GitHub</a>
+        </div>
+        <div class="project-card" data-cat="api">
+          <h3>Projeto API 2</h3>
+          <p>Descrição breve da API.</p>
+          <a href="https://github.com/username/repo2" target="_blank" class="button">Ver no GitHub</a>
+        </div>
+      </div>
+
+      <div class="chart-container" data-aos="fade-up">
+        <canvas id="commits-chart"></canvas>
+      </div>
+    </section>
+
+    <section id="contact" class="container" data-aos="fade-up">
+      <h2>Contato</h2>
+      <form action="https://formspree.io/f/xyzabc" method="POST">
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu Email" required>
+        <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit" class="button">Enviar</button>
+      </form>
+
+      <ul class="social">
+        <li><a href="https://github.com/pedrovictoriano"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/pedro-victoriano-2b33b41a2/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://x.com/phvictoriano"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container" data-aos="fade-up">
     © 2025 Pedro Victoriano. Todos os direitos reservados.
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- Bibliotecas externas -->
+  <script src="https://unpkg.com/tsparticles@2.9.3/tsparticles.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
